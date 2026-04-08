@@ -93,12 +93,12 @@ body {
 .brand { display:flex; align-items:center; gap:10px; }
 .brand-icon {
   width:40px; height:40px; border-radius:10px;
-  background: linear-gradient(135deg, var(white), var(white));
+  background: linear-gradient(135deg, var(--white), var(--white));
   display:flex; align-items:center; justify-content:center;
   font-size:20px;
 }
 .brand-name { font-size:22px; font-weight:700; color:#00fb15; letter-spacing:-.5px; }
-.brand-name span { color: var(blue); }
+.brand-name span { color: var(--blue); }
 .landing-nav-links { display:flex; gap:8px; }
 .btn { display:inline-flex; align-items:center; gap:6px; padding:10px 20px; border-radius:10px; border:none; cursor:pointer; font-family:var(--font); font-size:14px; font-weight:500; transition: all .18s; text-decoration:none; }
 .btn-ghost { background:transparent; color:rgba(255,255,255,.75); }
@@ -167,7 +167,7 @@ body {
 #screen-auth {
   background: var(--gray-50);
   align-items:center; justify-content:center; padding:24px;
-}
+}   
 .auth-card {
   background:#fff; border-radius:20px; box-shadow: var(--shadow-lg);
   width:100%; max-width:480px; overflow:hidden;
@@ -177,13 +177,13 @@ body {
   padding:36px 40px 28px; text-align:center; position:relative; overflow:hidden;
 }
 .auth-header::after {
-  content:''; position:absolute; bottom:-30px; left:0; right:0; height:60px;
+  content:''; position:absolute; bottom:-30px; left:0; right:0; height:50px;
   background: #fff; border-radius:50% 50% 0 0 / 50px;
 }
 .auth-brand { display:flex; align-items:center; justify-content:center; gap:10px; margin-bottom:12px; }
 .auth-brand-icon { width:44px; height:44px; border-radius:12px; background:linear-gradient(135deg,var(white),var(white)); display:flex; align-items:center; justify-content:center; font-size:22px; }
 .auth-brand-name { font-size:24px; font-weight:800; color:#00f435; }
-.auth-brand-name span { color:var(blue); }
+.auth-brand-name span { color:var(--blue); }
 .auth-tagline { font-size:13px; color:rgba(255,255,255,.55); }
 
 .auth-tabs { display:flex; margin:24px 40px 0; gap:4px; }
@@ -626,12 +626,12 @@ textarea.form-input { resize:vertical; min-height:80px; }
     </div>
     <div class="landing-nav-links">
       <button class="btn btn-ghost" onclick="goTo('auth','login')">Se connecter</button>
-      <button class="btn btn-primary" onclick="goTo('auth','register')">Commencer</button>
+      <button class="btn btn-primary" onclick="goTo('auth','register')">S'inscrire</button>
     </div>
   </nav>
 
   <div class="landing-hero">
-    <div class="hero-badge">Made by BOUSSOUGOU BELL Lee Azaria & NKOMO COLLARD ESDRAS Calin </div>
+    <div class="hero-badge">Made by NKOMO COLLARD ESDRAS Calin </div>
     <h1 class="hero-title">
       Votre application de santé,<br>
       <span class="accent">centralisée</span> &amp;<br>
